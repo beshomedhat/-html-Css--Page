@@ -1,0 +1,808 @@
+.clr
+{
+    clear: both;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.line1
+{
+    height: 1px;
+    background-color: #ff305b;
+    width: 7%;
+    margin: 5px auto;
+    
+}
+.line2
+{
+    height: 1px;
+    background-color: #ff305b;
+    width: 15%;
+    margin: auto;
+}
+body
+{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+h2
+{
+    font-size: 40px;
+    color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+/*--------------------------------- Home ------------------------------------*/
+.home
+{
+    background-image: url(../img/slider/slider-01.jpg);
+    width: 100%;
+    height: 100%;
+}
+.home-page
+{
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    position: relative;
+}
+.nav
+{
+    background-color: #000;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    padding: 5px;
+    z-index: 99;
+}
+.logo
+{
+    float: left;
+    padding: 15px;
+}
+.logo a
+{
+    color: #ff305b;
+    font-size: 24px;
+    text-decoration: none;
+    display: block;
+}
+.logo a:hover
+{
+    text-decoration: underline;
+}
+.nav ul
+{
+    background-color:rgba(0,0,0,0.5);
+    list-style-type:none;
+    padding-left: 0;
+    overflow: hidden;
+}
+.nav ul li 
+{
+    padding: 10px;
+    float: right;
+    padding-top: 20px;
+}
+.nav ul li a
+{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+}
+.home-page p
+{
+    color: white;
+    font-size: 24px;
+}
+.home-page h1
+{
+    color: #ff305b;
+    font-size: 70px;
+}
+.home-head2
+{
+    color: white;
+    font-size: 26px;
+    font-weight: 300;
+}
+.home-head2:after
+{
+    content: "";
+    animation-name: home-caption;
+	animation-duration: 5s;
+	animation-iteration-count: infinite;
+    width: 100%;
+    height: 100%;
+}
+@keyframes home-caption
+{
+	0%{content: "|"}
+    3%{content: "D|"}
+    6%{content: "De|"}
+    9%{content: "Des|"}
+    12%{content: "Desi|"}
+    15%{content: "Desig|"}
+    18%{content: "Design|"}
+    21%{content: "Designe|"}
+    24%{content: "Designer|"}
+    27%{content: "Designe|"}
+    30%{content: "Design|"}
+    33%{content: "Desig|"}
+    36%{content: "Desi|"}
+    39%{content: "Des|"}
+    42%{content: "De|"}
+    45%{content: "D|"}
+    48%{content: "|"}
+    51%{content: "D|"}
+    54%{content: "De|"}
+    57%{content: "Dev|"}
+    69%{content: "Deve|"}
+    63%{content: "Devel|"}
+    66%{content: "Develo|"}
+    69%{content: "Develop|"}
+    72%{content: "Develope|"}
+    75%{content: "Developer|"}
+    78%{content: "Develope|"}
+    81%{content: "Develop|"}
+    84%{content: "Develo|"}
+    87%{content: "Devel|"}
+    90%{content: "Deve|"}
+    93%{content: "Dev|"}
+    96%{content: "De|"}
+    99%{content: "D|"}
+    99%{content: "|"}
+}
+
+.home-caption
+{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    width: 100%;
+}
+/*---------------------------------------------------------------------------*/
+
+/*--------------------------------- hello-session ---------------------------*/
+.about
+{
+    overflow: hidden;
+    padding: 50px 100px;
+}
+.img-info
+{
+    float: left;
+    width: 360px;
+    height: 440px;
+    position: relative;
+    z-index: 9;
+}
+.img-info img
+{
+    z-index: 9;
+}
+.img-info:before
+{
+    content: " ";
+    width: 360px;
+    height: 440px;
+    position: absolute;
+    top: -20px;
+    right: 15px;
+    border: 5px solid #555555;
+    border-radius: 12px;
+    z-index: -9;
+}
+.about-img
+{
+    float: left;
+    width: 40%;
+}
+.img
+{
+    background: rgba(0,0,0,0.6);
+    width: 360px;
+    height: 100%; 
+    top: 100%;
+    left: 0px;
+    padding: 50% 0%;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: top 1s 0s ease-in-out , opacity 1s;
+    z-index: 99;
+}
+.img-info:hover .img
+{
+    top:0%;
+    opacity: 1;
+}
+.img i
+{
+    padding: 5px;
+}
+.about-info
+{
+    overflow: hidden;
+}
+.about-info h3
+{
+    font-size: 34px;
+    color: #555; 
+    overflow: hidden;
+}
+.hello-info
+{
+    width: 4px;
+    height: 34px;
+    background-color: #ff305b;
+    float: left;
+    margin-right: 15px;
+}
+.about-info p
+{
+    color: rgb(153, 153, 153);
+    padding: 25px;
+}
+.about-info .line
+{
+    border-bottom-style: dotted;
+    border-bottom-color: rgb(153, 153, 153);
+}
+.about-info .info1 , .info2
+{
+    float: left;
+    width: 50%;
+    padding: 25px;
+}
+.about-info ul
+{
+    list-style-type: none;
+}
+.about-info ul li
+{
+   color: rgb(153, 153, 153);
+   font-size: 18px; 
+}
+.about-info ul li span
+{
+    color: #333;
+    font-size: 18px;
+}
+.about-info ul li a
+{
+    text-decoration: none;
+    color: rgb(153, 153, 153);
+}
+.hello-btn
+{
+    background-color: #ff305b;
+    padding: 10px;
+    border: none;
+    color: white;
+    border-radius: 8px;
+    margin: 10px;
+    font-size: 16px;
+}
+.hello-btn:hover
+{
+    background-color: orange;
+}
+/*---------------------------------------------------------------------------*/
+
+/*--------------------------------- our-services ----------------------------*/
+.our-services
+{
+    background-color: whitesmoke;
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+.services-info
+{
+    margin: 15px;
+}
+.services
+{
+    float: left;
+    width: 25%;
+    text-align: center;
+    padding: 15px;
+    transition: background-color 1s;
+    overflow: hidden;
+    
+}
+.services:hover 
+{
+    background-color: white;
+}
+.ico-img
+{
+    overflow: hidden;
+    padding: 10px;
+    transition: transform 1s;
+}
+.services:hover .ico-img
+{
+    transform: scale(1.2 , 1.2)
+}
+.services h3
+{
+    padding: 10px;
+    font-size: 24px;
+    color: #333;
+}
+.services p
+{
+    font-size: 16px;
+    color: #555555;
+}
+/*---------------------------------------------------------------------------*/
+
+/*--------------------------------- Our Portfolio ---------------------------*/
+.our-portfolio
+{
+    padding: 50px;
+    text-align: center;
+    overflow: hidden;
+}
+.our-portfolio .portfolio-link
+{
+    padding:25px;
+}
+.portfolio-link a
+{
+    text-decoration: none;
+    color: #555555;
+    padding:0px 25px;
+}
+.portfolio-link a:hover 
+{
+    color: #ff305b;
+}
+.portfolio-img
+{
+    overflow: hidden;
+}
+.layer
+{
+    width: 33.333333333333333333%;
+    float: left; 
+    overflow: hidden;
+    padding: 25px;
+}
+.items
+{
+    background-color: yellow;
+    border: solid 4px white;
+    position: relative;
+    overflow: hidden;
+}
+.item
+{
+    position: absolute;
+    top: 0px;
+    background-color: rgba(0,0,0,0.6);
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+
+}
+.items:hover .item
+{
+    opacity: 1;
+}
+.item .ico-item
+{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.items img
+{
+    width: 100%;
+}
+/*---------------------------------------------------------------------------*/
+
+/*----------------------------- numbers -------------------------------------*/
+.numbers
+{
+    padding: 50px;
+    overflow: hidden;
+    background-color: whitesmoke;
+}
+.numbers .number
+{
+    width: 25%;
+    padding: 25px;
+    float: left; 
+    text-align: center;
+}
+.numbers .number h3
+{
+    color: #333;
+    font-size: 26px;
+    padding: 15px;
+}
+.numbers .number h4
+{
+    color: #555555;
+    font-size: 16px;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------------------------------------ feedback -----------------------------*/
+.feedback
+{
+    padding: 50px;
+    overflow: hidden;
+}
+.client-feedback
+{
+    overflow: hidden;
+    background-color: whitesmoke;
+    width: 60%;
+    height: 25%;
+    margin: 25px auto;
+    position: relative;
+    z-index: -2;
+}
+.feedbacks
+{
+    text-align: center;
+}
+
+.client-feedback .client-img
+{
+    float: left;
+    width: 20%;
+    padding: 25px 0px 25px 25px;
+    overflow: hidden;
+    z-index: 999999;
+}
+.client-feedback .client-img img
+{
+    border-radius: 50%;
+    width: 100%;
+}
+.img-back
+{
+    width: 200px;
+    background-color: #ff305b;
+    height: 200px;
+    position: absolute;
+    top: -100px;
+    left: -100px;
+    transform: rotate(135deg);
+    z-index: -1;
+}
+.client-feedback .client-info
+{
+    float: left;
+    width: 80%; 
+    padding: 25px;
+    overflow: hidden;
+}
+.client-feedback .client-info h3
+{
+    font-size: 26px;
+    color: #333;
+}
+.client-feedback .client-info h4
+{
+    font-size: 18px;
+    color: #555555;
+    padding: 5px 0px;
+}
+.client-feedback .client-info p
+{
+    font-size: 16px;
+    color: #555555;
+    padding:10px 0px;
+}
+/*---------------------------------------------------------------------------*/
+/*-----------------------------------blogs----------------------------------------*/
+.blog
+{
+    overflow: hidden;
+    background-color: whitesmoke;
+    padding: 50px;
+}
+
+.blog-layer
+{
+    float: left;
+    width: 33.333333333333333333333%;
+    padding: 25px;
+}
+.blogs
+{
+    background-color: white;
+    width: 100%;
+}
+.blog-img
+{
+    width: 100%;
+    height: 30%;
+    overflow: hidden;
+}
+.blog-img img ,iframe
+{
+    width: 100%;
+}
+.blog-info p
+{
+    font-size: 16px;
+    color: #555555;
+    padding: 10px;
+}
+.blog-info
+{
+    padding: 10px;
+}
+.blog-info a
+{
+    text-decoration: none;
+    color: #333333;
+    font-size: 19px;
+}
+.blog-info .blog-link
+{
+    color: #333333;
+    font-size: 16px;
+}
+.blog a:hover 
+{
+    color: #ff305b;
+}
+/*---------------------------------------------------------------------------*/
+/*--------------------------------Contact Us---------------------------------*/
+.contact-us
+{
+   padding: 50px;  
+}
+.user-data
+{
+    margin: auto;
+    width: 50%;
+    overflow: hidden;
+}
+.user-name
+{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.user-email
+{
+    float: left;
+    width: 50%;
+    padding: 10px;
+}
+.user-subject, .user-textarea
+{
+    width: 100%; 
+    padding: 10px;
+}
+.user-data input
+{
+    width: 100%;
+    height: 5%;
+    padding: 10px;
+}
+.user-data textarea
+{
+    width: 100%;
+    padding: 10px;
+    height: 10%;
+}
+.user-data-btn
+{
+    background-color: #ff305b;
+    padding: 10px;
+    border: none;
+    color: white;
+}
+.user-data-btn:hover
+{
+    background-color: orange;
+}
+/*---------------------------------------------------------------------------*/
+
+/*------------------------------last session---------------------------------*/
+.last-session
+{
+    background-color: #333;
+    text-align: center;
+    padding: 25px;
+}
+.last-session i
+{
+    padding: 10px;
+    color: red;
+}
+.last-session p
+{
+    color: white;
+    font-size: 18px;
+}
+.last-session .last-link
+{
+    text-decoration: none;
+    color: #ff305b;
+}
+.last-link:hover
+{
+    text-decoration: underline;
+}
+/*---------------------------------------------------------------------------*/
+/* --------------------------------------------------*/
+@media screen and (max-width:1133px)
+{
+    .about-img
+    {
+        width: 100%;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .about-info
+    {
+        width: 100%;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .about-info .info1 , .info2
+    {
+        width: 100%;
+    }
+    .services
+    {
+        width: 50%;
+    }  
+    .layer
+    {
+        width: 50%;
+    }
+    .numbers
+    {
+        margin: auto;
+    }
+    .numbers .number
+    {
+        width: 50%;  
+    } 
+    .client-feedback
+    {
+        width: 80%;
+        height: 30%;
+    }
+
+    .blog-layer
+    {
+        width: 50%;
+    }
+    .user-data , .user-name , .user-email
+    {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:768px)
+{
+    .about-img
+    {
+        width: 100%;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .about-info
+    {
+        width: 100%;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .about-info .info1 , .info2
+    {
+        width: 100%;
+    }
+    .services
+    {
+        width: 50%;
+    }  
+    .layer
+    {
+        width: 100%;
+    }
+    .numbers
+    {
+        margin: auto;
+    }
+    .numbers .number
+    {
+        width: 50%;  
+    } 
+    .client-feedback
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .client-feedback .client-img
+    {
+        width: 100%; 
+    } 
+    .client-feedback .client-info
+    {
+        width: 100%; 
+    }
+    .blog-layer
+    {
+        width: 100%;
+    }
+    .user-data , .user-name , .user-email
+    {
+        width: 100%;
+    }
+}
+/*--------------------------------------------------*/
+@media screen and (max-width:600px)
+{
+    .about-img
+    {
+        width: 100%;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .about-info
+    {
+        width: 100%;
+        margin: 10px;
+        overflow: hidden;
+    }
+    .about-info .info1 , .info2
+    {
+        width: 100%;
+    }
+    .services
+    {
+        width: 100%;
+    }  
+    .layer
+    {
+        width: 100%;
+    }
+    .numbers
+    {
+        margin: auto;
+    }
+    .numbers .number
+    {
+        width: 100%;  
+    } 
+    .client-feedback
+    {
+        width: 100%;
+        height: 100%;
+    }
+    .client-feedback .client-img
+    {
+        width: 100%; 
+    } 
+    .client-feedback .client-info
+    {
+        width: 100%; 
+    }
+    .blog-layer
+    {
+        width: 100%;
+    }
+    .user-data , .user-name , .user-email
+    {
+        width: 100%;
+    }
+}
